@@ -89,8 +89,8 @@ LICENSE                              MIT
 
 ## Related workflow agents
 
-- [research-writer](https://github.com/45ck/workflow-agents) - Own search strategy, synthesis, and evidence quality
-- [requirements-analyst](https://github.com/45ck/workflow-agents) - Use research output to sharpen scope and assumptions
+- [research-writer](https://github.com/45ck/skill-harness) - Own search strategy, synthesis, and evidence quality
+- [requirements-analyst](https://github.com/45ck/skill-harness) - Use research output to sharpen scope and assumptions
 
 ## Related skill packs
 
