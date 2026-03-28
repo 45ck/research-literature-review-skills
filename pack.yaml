@@ -1,0 +1,175 @@
+name: research-literature-review-pack
+version: v0.1.0
+kind: skill-pack
+summary: Skill pack for research question refinement, literature search, screening,
+  synthesis, evidence assessment, and future work generation.
+skills:
+- name: research-question-refiner
+  purpose: Refine broad topics into focused, researchable questions with clear scope
+    and variables.
+  inputs:
+  - topic or problem area
+  - initial objective
+  - constraints or domain
+  - known context if any
+  outputs:
+  - refined research question set
+  - scope statement
+  - assumptions and exclusions
+  handoffs:
+  - search-string-designer
+  - methodology-comparer
+  - critical-analysis-writer
+- name: search-string-designer
+  purpose: Design search strings and source strategies for efficient, reproducible
+    literature searches.
+  inputs:
+  - research question
+  - keywords and synonyms
+  - databases or sources
+  - timeframe or discipline bounds
+  outputs:
+  - search string set
+  - source plan
+  - inclusion and exclusion hints
+  handoffs:
+  - paper-screening-checker
+  - related-work-synthesizer
+  - evidence-strength-scorer
+- name: paper-screening-checker
+  purpose: Screen candidate sources against relevance, quality, and scope criteria.
+  inputs:
+  - research question
+  - candidate paper list
+  - screening criteria
+  - exclusion reasons if used
+  outputs:
+  - screened paper set
+  - screening decisions
+  - exclusion log
+  handoffs:
+  - literature-theme-extractor
+  - evidence-strength-scorer
+  - critical-analysis-writer
+- name: literature-theme-extractor
+  purpose: Cluster literature into themes, schools of thought, methods, and trends.
+  inputs:
+  - screened sources
+  - research question
+  - notes or highlights
+  - time horizon if relevant
+  outputs:
+  - theme map
+  - trend summary
+  - theme-to-source linkage
+  handoffs:
+  - gap-finder
+  - related-work-synthesizer
+  - future-work-generator
+- name: gap-finder
+  purpose: Identify unresolved questions, weak evidence areas, contradictions, and
+    underexplored spaces.
+  inputs:
+  - theme map
+  - screened sources
+  - research goal
+  - known practical constraints
+  outputs:
+  - gap list
+  - gap rationale
+  - candidate opportunity statements
+  handoffs:
+  - future-work-generator
+  - critical-analysis-writer
+  - methodology-comparer
+- name: methodology-comparer
+  purpose: Compare study designs, methods, datasets, and evaluation choices across
+    sources.
+  inputs:
+  - research question
+  - selected papers
+  - methods of interest
+  - comparison criteria
+  outputs:
+  - method comparison matrix
+  - strengths and weaknesses
+  - fit-for-purpose recommendation
+  handoffs:
+  - evidence-strength-scorer
+  - critical-analysis-writer
+  - future-work-generator
+- name: evidence-strength-scorer
+  purpose: Assess the weight and credibility of evidence behind claims in the literature.
+  inputs:
+  - selected papers
+  - claim set or themes
+  - quality criteria
+  - context of use
+  outputs:
+  - evidence strength ratings
+  - confidence notes
+  - high-risk claim list
+  handoffs:
+  - critical-analysis-writer
+  - related-work-synthesizer
+  - future-work-generator
+- name: critical-analysis-writer
+  purpose: Write critical discussion that distinguishes claims, evidence, assumptions,
+    and limitations.
+  inputs:
+  - research question
+  - selected papers
+  - theme map or method comparison
+  - evidence ratings if available
+  outputs:
+  - critical analysis section
+  - claim-evidence table
+  - limitations summary
+  handoffs:
+  - related-work-synthesizer
+  - future-work-generator
+  - reference-integrity-checker
+- name: related-work-synthesizer
+  purpose: Synthesize related work into a coherent narrative instead of a paper-by-paper
+    list.
+  inputs:
+  - research question
+  - theme map
+  - selected papers
+  - desired structure or section goal
+  outputs:
+  - related work section
+  - theme-led structure
+  - transition points
+  handoffs:
+  - critical-analysis-writer
+  - future-work-generator
+  - reference-integrity-checker
+- name: future-work-generator
+  purpose: Generate grounded future work directions based on gaps, limitations, and
+    practical constraints.
+  inputs:
+  - research question
+  - gap list
+  - limitations
+  - implementation or study constraints
+  outputs:
+  - future work directions
+  - priority ordering
+  - justified next steps
+  handoffs:
+  - research-question-refiner
+  - methodology-comparer
+  - documentation-evidence-pack/appendix-assembler
+templates:
+- research-question-template.md
+- search-string-template.md
+- screening-log-template.md
+- theme-map-template.md
+- gap-analysis-template.md
+- method-comparison-template.md
+- evidence-strength-matrix-template.md
+- critical-analysis-template.md
+- related-work-template.md
+- future-work-template.md
+example_flow: examples/sample-flow.md
