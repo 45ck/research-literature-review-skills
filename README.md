@@ -87,6 +87,11 @@ uninstall.sh                         global uninstaller
 LICENSE                              MIT
 ```
 
+## Related workflow agents
+
+- [research-writer](https://github.com/45ck/workflow-agents) - Own search strategy, synthesis, and evidence quality
+- [requirements-analyst](https://github.com/45ck/workflow-agents) - Use research output to sharpen scope and assumptions
+
 ## Related skill packs
 
 - [business-analysis-skills](https://github.com/45ck/business-analysis-skills) - Business analysis techniques, workflows, and quality checks
